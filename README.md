@@ -1,2 +1,2 @@
 # hyperblog
-Un blog hecho con el curso de platzi
+blog for host tailwind css

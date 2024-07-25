@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    fontFamily: {
+      myfont: ['Anton', 'sans-serif']
+    },
+    extend: {
+      colors: {
+	danger: '#ff5f40',
+      }
+    },
   },
   plugins: [],
 }

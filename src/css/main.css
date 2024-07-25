@@ -1,0 +1,21 @@
+.hero {
+  background:#fff;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.text_cool {
+  width:100%;
+  color:transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:200px;
+  font-weight:bold;
+  background-image: url('../img/hyperblog.jpg');
+  background-size: cover;
+  background-position-y: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+}

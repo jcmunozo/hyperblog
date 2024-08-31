@@ -1,5 +1,8 @@
+body {
+  background-color: #1e2030;
+}
+
 .hero {
-  background:#fff;
   min-height:100vh;
   display:flex;
   align-items:center;

@@ -1,2 +1,2 @@
 # hyperblog
-blog for host tailwind css
+Pure semantic html and css site

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="src/css/main.css">
 </head>
 <body>
+  <!-- header -->
   <header>
     <nav>
       <a href="#">
@@ -32,15 +33,34 @@
       </ul>
     </nav>
   </header>
+  <!-- main -->
   <main>
+    <!-- hero -->
     <section class="hero">
       <h1 class="text_cool">Hyperblog</h1>
     </section> 
+    <!-- about -->
     <section id="about" class="about">
       <img src="src/img/logo.png">
-      <span>
-        tu blog de cabecera
-      </span>
+      <search class="search-section">
+	<span class="search-icon"></span>
+	<input type="text" class="input-search">
+	<a href="#" class="micro-icon"></a>
+      </search>
+    </section>
+    <section class="data-section">
+      <h1 class= "data-title">Unknown tags</h1>
+      <p class="data">Progreso (progress): <progress value="70" max="100">70%</progress></p>
+      
+      <p class="data">Nivel de batería (meter): <meter value="0.6">60%</meter></p>
+      
+      <p class="data"> Fecha (time): <time datetime="2023-09-15">15 de septiembre de 2023</time></p>
+      
+      <p class="data">Población (data): <data value="5000000">5 millones</data></p>
+      
+      <p class="data">Resultado (output): <output name="result">42</output></p>
+      
+      <p class="data">Número genérico (span): <span class="number">12345</span></p>
     </section>
     <section id="grid"></section>
     <section id="card"></section>

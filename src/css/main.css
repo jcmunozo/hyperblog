@@ -183,3 +183,16 @@ p output {
   color: #fc9bbf;
   font-weight: bold;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1a052c;
+}
+
+footer section a img {
+  border: 2px solid #fc9bbf;
+  border-radius: 50%; 
+}

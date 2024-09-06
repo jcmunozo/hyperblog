@@ -1,93 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/styles.css">
-  <link rel="stylesheet" href="src/css/main.css">
-</head>
-<body>
-  <!-- header -->
-  <header>
-    <nav>
-      <a href="#">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog writed with semantic htmll and css">
+    <meta name="robots" content="index, follow">
+    <title>Hyperblog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+	<a href="#">
+	  <img src="src/img/logo.png">
+	</a>
+	<ul>
+	  <li>
+	    <a href="#">hero</a>
+	  </li>
+	  <li>
+	    <a href="#about">about</a>
+	  </li>
+	  <li>
+	    <a href="#grid">grid</a>
+	  </li>
+	  <li>
+	    <a href="#card">card</a>
+	  </li>
+	  <li>
+	    <a href="#footer">footer</a>
+	  </li>
+	</ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <section class="hero">
+	<h1 class="text_cool">Hyperblog</h1>
+      </section> 
+      <!-- about -->
+      <section id="about" class="about">
 	<img src="src/img/logo.png">
-      </a>
-      <ul>
-	<li>
-	  <a href="#">hero</a>
-	</li>
-	<li>
-	  <a href="#about">about</a>
-	</li>
-	<li>
-	  <a href="#grid">grid</a>
-	</li>
-	<li>
-	  <a href="#card">card</a>
-	</li>
-	<li>
-	  <a href="#footer">footer</a>
-	</li>
-      </ul>
-    </nav>
-  </header>
-  <!-- main -->
-  <main>
-    <!-- hero -->
-    <section class="hero">
-      <h1 class="text_cool">Hyperblog</h1>
-    </section> 
-    <!-- about -->
-    <section id="about" class="about">
-      <img src="src/img/logo.png">
-      <search class="search-section">
-	<span class="search-icon"></span>
-	<input type="text" class="input-search">
-	<a href="#" class="micro-icon"></a>
-      </search>
-    </section>
-    <section class="data-section">
-      <h1 class= "data-title">Unknown tags</h1>
-      <p class="data">Progreso (progress): <progress value="70" max="100">70%</progress></p>
-      
-      <p class="data">Nivel de batería (meter): <meter value="0.6">60%</meter></p>
-      
-      <p class="data"> Fecha (time): <time datetime="2023-09-15">15 de septiembre de 2023</time></p>
-      
-      <p class="data">Población (data): <data value="5000000">5 millones</data></p>
-      
-      <p class="data">Resultado (output): <output name="result">42</output></p>
-      
-      <p class="data">Número genérico (span): <span class="number">12345</span></p>
-    </section>
-    <section id="grid"></section>
-    <section id="card"></section>
-  </main>
-  <footer id="footer">
-    <section>
-      <a href="https://github.com/jcmunozo">
-	<img src="src/img/logo.png" alt="jcmunozo Logo" />
-	<span>Jcmunozo</span>
-      </a>
-      <ul>
-	<li>
-	  <a href="#">About</a>
-	</li>
-	<li>
-	  <a href="#">Privacy Policy</a>
-	</li>
-	<li>
-	  <a href="#">Licensing</a>
-	</li>
-	<li>
-	  <a href="#">Contact</a>
-	</li>
-      </ul>
-    </section>
-    <hr />
-    <span>© 2024 <a href="https://github.com/jcmunozo" class="hover:underline">jcmunozo™</a>. All Rights Reserved.</span>
-  </footer>
-</body>
+	<search class="search-section">
+	  <span class="search-icon"></span>
+	  <input type="text" class="input-search">
+	  <a href="#" class="micro-icon"></a>
+	</search>
+      </section>
+      <section class="data-section">
+	<h1 class= "data-title">Unknown tags</h1>
+	<p class="data">Progreso (progress): <progress value="70" max="100">70%</progress></p>
+	<p class="data">Nivel de batería (meter): <meter value="0.6">60%</meter></p>
+	<p class="data"> Fecha (time): <time datetime="2023-09-15">15 de septiembre de 2023</time></p>
+	<p class="data">Población (data): <data value="5000000">5 millones</data></p>
+	<p class="data">Resultado (output): <output name="result">42</output></p>
+	<p class="data">Número genérico (span): <span class="number">12345</span></p>
+      </section>
+      <section id="grid"></section>
+      <section id="card"></section>
+    </main>
+    <footer id="footer">
+      <section>
+	<a href="https://github.com/jcmunozo">
+	  <img src="src/img/logo.png" alt="jcmunozo Logo" />
+	  <span>Jcmunozo</span>
+	</a>
+	<ul>
+	  <li>
+	    <a href="#">About</a>
+	  </li>
+	  <li>
+	    <a href="#">Privacy Policy</a>
+	  </li>
+	  <li>
+	    <a href="#">Licensing</a>
+	  </li>
+	  <li>
+	    <a href="#">Contact</a>
+	  </li>
+	</ul>
+      </section>
+      <hr />
+      <span>© 2024 <a href="https://github.com/jcmunozo" class="hover:underline">jcmunozo™</a>. All Rights Reserved.</span>
+    </footer>
+  </body>
 </html>

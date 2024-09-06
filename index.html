@@ -2,35 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Blog writed with semantic htmll and css">
+    <meta name="author" content="jcmunozo">
     <meta name="robots" content="index, follow">
-    <title>Hyperblog</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog writed with semantic htmll and css">
     <link rel="stylesheet" href="src/css/main.css">
+    <title>Hyperblog</title>
   </head>
   <body>
     <!-- header -->
     <header>
-      <nav>
+      <figure>
 	<a href="#">
 	  <img src="src/img/logo.png">
 	</a>
+      </figure>
+      <nav>
 	<ul>
 	  <li>
-	    <a href="#">hero</a>
+	    <a href="#">home</a>
+	  </li>
+	  <li>
+	    <a href="#search-tag">search tag</a>
 	  </li>
 	  <li>
 	    <a href="#about">about</a>
 	  </li>
 	  <li>
-	    <a href="#grid">grid</a>
-	  </li>
-	  <li>
-	    <a href="#card">card</a>
-	  </li>
-	  <li>
-	    <a href="#footer">footer</a>
+	    <a href="#footer">Contact</a>
 	  </li>
 	</ul>
       </nav>
@@ -38,18 +38,26 @@
     <!-- main -->
     <main>
       <!-- hero -->
-      <section class="hero">
+      <section class="home">
 	<h1 class="text_cool">Hyperblog</h1>
       </section> 
-      <!-- about -->
-      <section id="about" class="about">
-	<img src="src/img/logo.png">
+      <!-- search -->
+      <section id="search-tag" class="search">
+	<img class="search-img" src="src/img/logo.png">
 	<search class="search-section">
 	  <span class="search-icon"></span>
 	  <input type="text" class="input-search">
 	  <a href="#" class="micro-icon"></a>
 	</search>
       </section>
+      <section id="about" class="about">
+	<h1 class="about-title">Hyperblog</h1>
+	<p class="about-text">This is an entire semantic html blog, here you can search any element you want 
+	to know its equivalent in semantic html. <br> Feel free to check out the repo... </p>
+	<hr>
+	<a href="https://github.com/jcmunozo/hyperblog" class="github-icon" target=_blank ></a>
+      </section> 
+      <!-- data-section -->
       <section class="data-section">
 	<h1 class= "data-title">Unknown tags</h1>
 	<p class="data">Progreso (progress): <progress value="70" max="100">70%</progress></p>

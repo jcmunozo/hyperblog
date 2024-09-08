@@ -3,11 +3,12 @@
 :root {
   /* Colors */
   --color-bg:#1e2030;
-  --color-search:#fff;
+  --color-search:#f1c5d4;
   --color-text:#fd9bbe;
   --color-border:#fd9bbe; 
   --color-bg-light: #f1c5d4;
   --color-footer:#b38ad3;
+  --color-aux:#ae86cd;
 
   /* Fonts */
   --font-robot:"Roboto";
@@ -122,6 +123,10 @@ header nav ul {
   background-color:var(--color-search);
 }
 
+.search-section input {
+  background-color:var(--color-search);
+}
+
 .search-section:hover {
   border:2px solid var(--color-border);
 }
@@ -179,7 +184,7 @@ header nav ul {
   color:var(--color-text);
 }
 
-hr {
+.about hr {
   width:30%;
   border:0px;
   height:12px;
@@ -202,7 +207,7 @@ hr {
 
 .data-section {
   padding:20px;
-  max-width:600px;
+  max-width:50%;
   margin:40px auto;
   border-radius:10px;
   border:3px solid var(--color-border);
@@ -248,6 +253,199 @@ p output {
   font-weight:bold;
 }
 
+/* text-tags */
+
+.text-section {
+  padding:20px;
+  max-width:700px;
+  margin:40px auto;
+  border-radius:10px;
+  color:var(--color-text);
+  border:2px solid var(--color-border);
+}
+
+.text-section p {
+  margin:30px;
+}
+
+.text-section fieldset {
+  display:flex;
+  padding-top:30px;
+  align-items:center;
+  border-radius:10px;
+  padding-bottom:30px;
+  flex-direction:column;
+  justify-content: center;
+  border:2px solid var(--color-border);
+}
+
+fieldset legend {
+  margin-left:10px;
+  padding:5px 10px;
+  border-radius:25px;
+  color:var(--color-bg);
+  background-color:var(--color-aux);
+}
+
+fieldset mark {
+  background-color:var(--color-aux)
+}
+
+fieldset hr {
+  width:10%;
+  margin-top:10px;
+  margin-bottom:10px;
+  border:1px dashed var(--color-border);
+}
+
+/* detail */
+
+.detail-tag {
+  padding:20px;
+  max-width:700px;
+  margin:40px auto;
+  border-radius:10px;
+  color:var(--color-text);
+  border:2px solid var(--color-border);
+}
+
+summary::marker {
+  color:var(--color-text);
+  font-size:1.2em;
+}
+
+summary {
+  color:var(--color-text);
+  padding:10px;
+  border-radius:5px;
+}
+
+details p {
+  padding:30px;
+}
+
+/* form */
+
+.form-tag {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.form-tag fieldset {
+  width:50%;
+  display:flex;
+  padding:10px;
+  align-items:center;
+  border-radius:10px;
+  padding-bottom:30px;
+  flex-direction:column;
+  justify-content: center;
+  border:2px solid var(--color-border);
+}
+
+.form-tag label {
+  color:var(--color-text);
+}
+
+.form-tag input {
+  padding:5px;
+  outline:none;
+  margin-bottom:20px;
+  border-radius: 5px;
+  background-color: #f1c5d4;
+  border: 2px solid var(--color-text);
+}
+
+
+.form-tag select {
+  padding:5px;
+  border-radius: 5px;
+  color: var(--color-bg);
+  background-color: #f1c5d4;
+  border: 2px solid #fb9abe;
+}
+
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+textarea {
+  width:40%;
+  outline:none;
+  background-color:var(--color-bg-light);
+}
+
+input[type="image"] {
+  border: none;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+}
+
+/* media */
+
+.media-section {
+  display:flex;
+  margin-top:50px;
+  align-items:center;
+  justify-content:center;
+}
+
+.media-section .img-info {
+  text-align:center;
+  margin-bottom:20px;
+} 
+
+.media-section fieldset {
+  width:50%;
+  display:flex;
+  padding:20px;
+  align-items:center;
+  border-radius:10px;
+  padding-bottom:30px;
+  flex-direction:column;
+  justify-content:center;
+  color:var(--color-text);
+  border:2px solid var(--color-border);
+} 
+
+.media-section fieldset figure {
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.media-section fieldset figure img {
+  width:330px;
+  height:330px;
+  border-radius:5px;
+  border:1px solid var(--color-border);
+}
+
+pre {
+  border-radius:10px;
+  border:1px solid var(--color-border);
+}
+
+pre code {
+  display:block;
+  font-size:15px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.media-section .video-info {
+  display:flex;
+  margin-top:30px;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+} 
+
 /* footer */
 
 footer {
@@ -289,6 +487,17 @@ footer section ul li a {
   cursor:pointer;
   text-decoration:none;
   color:var(--color-text);
+}
+
+
+footer hr {
+  width:30%;
+  border:0px;
+  height:12px;
+  border-radius:50%;
+  margin-top:20px;
+  margin-bottom:20px;
+  box-shadow:inset 0 6px 6px -6px var(--color-border);
 }
 
 footer span {

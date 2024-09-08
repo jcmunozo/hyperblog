@@ -53,22 +53,141 @@
       <section id="about" class="about">
 	<h1 class="about-title">Hyperblog</h1>
 	<p class="about-text">This is an entire semantic html blog, here you can search any element you want 
-	to know its equivalent in semantic html. <br> Feel free to check out the repo... </p>
+	to know its equivalent in semantic html and its result. ej: ( strong ) - (result to use the tag) <br> Feel free to check out the repo... </p>
 	<hr>
 	<a href="https://github.com/jcmunozo/hyperblog" class="github-icon" target=_blank ></a>
       </section> 
       <!-- data-section -->
       <section class="data-section">
-	<h1 class= "data-title">Unknown tags</h1>
+	<h1 class= "data-title">Data tags</h1>
 	<p class="data">Progreso (progress): <progress value="70" max="100">70%</progress></p>
 	<p class="data">Nivel de batería (meter): <meter value="0.6">60%</meter></p>
 	<p class="data"> Fecha (time): <time datetime="2023-09-15">15 de septiembre de 2023</time></p>
 	<p class="data">Población (data): <data value="5000000">5 millones</data></p>
 	<p class="data">Resultado (output): <output name="result">42</output></p>
+	<p class="data">Variables (var): <var>x=h<sup>2</sup>x*a/c<sub>2</sub></var></p>
 	<p class="data">Número genérico (span): <span class="number">12345</span></p>
       </section>
-      <section id="grid"></section>
-      <section id="card"></section>
+      <section id="text-tags" class="text-section">
+	<p dir="rtl">This text is on right to left, atribute dir = rtl</p>
+	<p><blockquote> This efect can be done using the tag ( blockquote )</blockquote><q>name author ( q )</q></p>
+	<p><address> calle 22 Cr 2 #4. (address)</address></p>
+	<fieldset>
+	  <legend>Text html tags  (fieldset - legend)</legend>
+	  <span>( abbr )<abbr title="this is use for abbreviations"> put mouse on me.</abbr></span><hr>
+	  <span>( small )<small> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></span><hr>
+	  <span>( sub ) Lorem<sub> ipsum dolor sit amet</sub> consectetur adipiscing elit.</span><hr>
+	  <span>( sup ) Lorem<sup> ipsum dolor sit amet</sup> consectetur adipiscing elit.</span><hr>
+	  <span>( em )<em> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></span><hr>
+	  <span>( del )<del> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</del></span><hr>
+	  <span>( ins )<ins> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ins></span><hr>
+	  <span>( strong )<strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></span><hr>
+	  <span>( big )<big> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</big></span><hr>
+	  <span>( mark )<mark> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mark></span><hr>
+	</fieldset>
+	<p contenteditable="true">You can edit this text</p>
+      </section>
+      <section id="detail-tag" class="detail-tag">
+	<details>
+	  <summary>show loren ipsum (details - summary - p)</summary>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	  Quisque aliquet dui id nibh tincidunt tempor. Praesent mi arcu, pharetra at mattis vitae, 
+	  sodales in est. Praesent sit amet interdum tortor. Suspendisse cursus, 
+	  lacus non fermentum facilisis, elit urna iaculis purus, hendrerit imperdiet nisl 
+	  lectus vitae elit. In sit amet dolor eu nibh scelerisque dapibus. 
+	  Curabitur posuere orci nisi, nec dapibus orci auctor sed. Morbi cursus rhoncus metus non suscipit. </p>
+	</details>
+      </section>
+      <section id="form-tag" class="form-tag">
+	<fieldset>
+	  <legend>Inputs fields</legend>
+	  <label>Text type:</label>
+	  <input type="text">
+	  <label>Url type:</label>
+	  <input type="url">
+	  <label>Telephon type:</label>
+	  <input type="tel">
+	  <label>Number type:</label>
+	  <input type="number">
+	  <label>Password type:</label>
+	  <input type="password">
+	  <label>Email type:</label>
+	  <input type="email" name="email" autocomplete="email">
+	  <label>Search type:</label>
+	  <input type="search">
+	  <label>Browsers list type:</label>
+	  <input list="browsers" id="browser" placeholder="type e ...">
+	  <datalist id="browsers">
+	    <option value="Edge">
+	    <option value="Firefox">
+	    <option value="Chrome">
+	    <option value="Opera">
+	    <option value="Safari">
+	  </datalist>
+	  <label>Range type:</label>
+	  <input type="range" value="Reset">
+	  <label>Checkbox type:</label>
+	  <input type="checkbox" value="Reset">
+	  <label>Radio type:</label>
+	  <input type="radio" value="Reset">
+	  <label>Reset type:</label>
+	  <input type="reset" value="Reset">
+	  <label>Submit type:</label>
+	  <input type="submit" value="Submit">
+	  <label>Button type:</label>
+	  <input type="button" value="Button">
+	  <label>Color type:</label>
+	  <input type="color">
+	  <label>Time type:</label>
+	  <input type="time">
+	  <label>Date type:</label>
+	  <input type="date">
+	  <label>Datetime-local type:</label>
+	  <input type="datetime-local">
+	  <label>File type:</label>
+	  <input type="file">
+	  <label>Textarea type:</label>
+	  <textarea></textarea>
+	  <label>Image type:</label>
+	  <input type="image" src="https://img.icons8.com/?size=100&id=46809&format=png&color=000000" alt="Submit">
+	  <label>
+	    Select - optgroup - option:
+	    <select name="cars" id="cars">
+	      <optgroup label="Swedish Cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+	      </optgroup>
+	      <optgroup label="German Cars">
+		<option value="mercedes">Mercedes</option>
+		<option value="audi">Audi</option>
+	      </optgroup>
+	    </select>
+	  </label>
+	</fieldset>
+      </section>
+      <section class="media-section">
+	<fieldset>
+	  <legend>Media</legend>
+	  <div class="img-info">
+	    <p>Optimal img weight - 70kb</p>
+	    <p>If u want to reduce an image o tinypng</p>
+	    <p>If u want to remove metadata go verexif</p>
+	  </div>
+	  <figure>
+	    <img src="./src/img/image-section.jpg" alt="radom image">
+	    <figcaption>random image (figure - img - figcaption)</figcaption>
+	  </figure>
+	  <div class="video-info">
+	  <p>For videos you can use this structure <br>
+	  <pre><code>
+&lt;video controls preload="auto"&gt;
+    &lt;source src="video.mp4"/&gt;
+&lt;/video&gt;
+	  </code></pre>
+	  </div>
+	  </p>
+	</fieldset>
+      </section>
     </main>
     <footer id="footer">
       <section class="footer-section">

@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog writed with semantic htmll and css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/main.css">
     <title>Hyperblog</title>
   </head>
@@ -185,10 +189,10 @@
       <section class="media-section">
 	<fieldset>
 	  <legend>Media</legend>
-	  <div class="img-info">
-	    <p>Optimal img weight - 70kb</p>
-	    <p>If u want to reduce an image o tinypng</p>
-	    <p>If u want to remove metadata go verexif</p>
+	  <div>
+	    <p>Optimal image size: ~70KB.<br>
+	     Compress images: Use <strong><a href="https://tinypng.com/" target=_blank>TinyPNG</a></strong><br>
+	     Remove metadata: Use <strong><a href="https://www.verexif.com/en/" target=_blank>VerExif</a></strong></p>
 	  </div>
 	  <figure>
 	    <img src="./src/img/image-section.jpg" alt="radom image" usemap="#image-map">
@@ -201,16 +205,16 @@
 		<area target="_blank" alt="buildings" title="buildings" href="https://en.wikipedia.org/wiki/Building" coords="125,78,201,103" shape="rect">
 	    </map>
 	  </figure>
-	  <div class="img-map">
+	  <div>
 	    <p>This image use a &lt; map - area &gt; tag, for objects "moon, bridge and buildings".<br>
-	    <strong>put the mouse over</strong> this objects to get info... <br>
+	    <strong>put the mouse over</strong> this objects to get info... </p>
 	  </div>
-	  <div class="video-info">
+	  <div>
 	  <p>For videos you can use this structure <br>
 	  <pre><code>
-&lt;video controls preload="auto"&gt;
-    &lt;source src="video.mp4"/&gt;
-&lt;/video&gt;
+	  &lt;video controls preload="auto"&gt;
+	      &lt;source src="video.mp4"/&gt;
+	  &lt;/video&gt;
 	  </code></pre>
 	  </div>
 	  </p>
@@ -285,7 +289,7 @@
 	</ul>
       </section>
       <hr />
-      <span>© 2024 <a href="https://github.com/jcmunozo">jcmunozo™</a>. All Rights Reserved.</span>
+      <p>© 2024 <a href="https://github.com/jcmunozo">jcmunozo™</a>. All Rights Reserved.</p>
     </footer>
   </body>
 </html>

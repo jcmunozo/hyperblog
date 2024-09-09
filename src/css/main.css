@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
 :root {
-  /* Colors */
   --color-bg:#1e2030;
   --color-search:#f1c5d4;
   --color-text:#fd9bbe;
@@ -10,8 +7,10 @@
   --color-footer:#b38ad3;
   --color-aux:#ae86cd;
 
-  /* Fonts */
-  --font-robot:"Roboto";
+  --font-body:"Noto Serif", serif;
+  --font-home:"Anton", sans-serif;
+
+  --border-global:2px solid var(--color-border);
 }
 
 * {
@@ -21,20 +20,23 @@
 }
 
 html {
+  font-size:62.5%;
+  font-family:var(--font-body);
   scroll-behavior:smooth;
 }
 
 body {
+  font-size:1.8rem;
   background-color:var(--color-bg)
 }
 
 section fieldset {
   width:50%;
-  padding:30px;
-  margin-top:30px;
-  border-radius:10px;
+  padding:3rem;
+  margin-top:3rem;
+  border-radius:1rem;
   color:var(--color-text);
-  border:2px solid var(--color-border);
+  border:var(--border-global);
 } 
 
 blockquote, ul, dd, dt, ol {
@@ -42,9 +44,9 @@ blockquote, ul, dd, dt, ol {
 }
 
 fieldset legend {
-  margin-left:10px;
-  padding:5px 10px;
-  border-radius:25px;
+  margin-left:1rem;
+  padding:0.5rem 1rem;
+  border-radius:2.5rem;
   color:var(--color-bg);
   background-color:var(--color-aux);
 }
@@ -55,36 +57,36 @@ fieldset mark {
 
 fieldset hr {
   width:10%;
-  margin-top:10px;
-  margin-bottom:10px;
+  margin-top:1rem;
+  margin-bottom:1rem;
   border:1px dashed var(--color-border);
 }
 
 /* header - navbar */
 
 header {
-  top:50px;
+  top:5rem;
   z-index:10;
-  margin:50px;
+  margin:5rem;
   display:flex;
   position:sticky;
   justify-content:space-between;
 }
 
 header figure img {
-  width:60px;
-  height:60px;
+  width:6rem;
+  height:6rem;
 }
 
 header nav {
   width:60%;
-  height:60px;
+  height:6rem;
   display:flex;
-  border-radius:50px; 
+  border-radius:5rem; 
   align-items:center;
   justify-content:center;
-  backdrop-filter:blur(50px);
-  border:3px solid var(--color-border);
+  backdrop-filter:blur(5rem);
+  border:var(--border-global);
 /*  transform: skewX(-21deg);  X inclination  */
 }
 
@@ -97,10 +99,10 @@ header a {
 header nav ul {
   width:100%;
   display:flex;
-  font-size:20px;
+  font-size:2rem;
   list-style:none;
-  margin-left:30px;
-  margin-right:30px;
+  margin-left:3rem;
+  margin-right:3rem;
   align-items:center;
   justify-content:space-between;
 }
@@ -116,7 +118,7 @@ header nav ul {
 
 .home h1 {
   width:100%;
-  font-size:200px;
+  font-size:25rem;
   font-weight:bold;
   color:transparent;
   text-align: center;
@@ -124,6 +126,7 @@ header nav ul {
   background-size:cover;
   text-transform:uppercase;
   background-position-y:center;
+  font-family:var(--font-home);
   background-image:url('../img/hyperblog.jpg');
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -140,42 +143,45 @@ header nav ul {
 }
 
 .search img {
-  width:200px;
-  height:200px;
+  width:20rem;
+  height:20rem;
 }
 
 .search-section search {
-  width:470px;
+  width:47rem;
   display:flex;
-  border-radius:50px;
+  border-radius:5rem;
   align-items:center;
   justify-content:center;
   border:2px solid var(--color-bg);
+
   background-color:var(--color-search);
 }
 
 .search-section search input {
+  color:var(--color-bg);
+  font-family:var(--font-body);
   background-color:var(--color-search);
 }
 
 .search-section search:hover {
-  border:2px solid var(--color-border);
+  border:var(--border-global);
 }
 
 .search-section input {
   border:0;
-  width:450px;
-  height:50px;
+  width:45rem;
+  height:5rem;
   outline:none;
-  font-size:18px;
+  font-size:1.8rem;
 }
 
 .search-icon {
-  width:25px;
-  height:25px;
+  width:2.5rem;
+  height:2.5rem;
   opacity:0.7;
-  margin-left:20px;
-  margin-right:20px;
+  margin-left:2rem;
+  margin-right:2rem;
   background-size:contain;
   background-position:center;
   background-repeat:no-repeat;
@@ -183,10 +189,10 @@ header nav ul {
 }
 
 .micro-icon {
-  width:25px;
-  height:25px;
-  margin-left:20px;
-  margin-right:20px;
+  width:2.5rem;
+  height:2.5rem;
+  margin-left:2rem;
+  margin-right:2rem;
   background-size:contain;
   background-position:center;
   background-repeat:no-repeat;
@@ -204,16 +210,15 @@ header nav ul {
 }
 
 .about h1 {
-  font-size:40px;
-  margin-top:60px;
-  margin-bottom:20px;
+  font-size:4rem;
+  margin-top:6rem;
+  margin-bottom:2rem;
   color:var(--color-text);
 }
 
 .about p {
   width:50%;
-  font-size:20px;
-  margin-bottom:20px;
+  margin-bottom:2rem;
   color:var(--color-text);
 }
 
@@ -224,16 +229,16 @@ header nav ul {
 .about hr {
   width:30%;
   border:0px;
-  height:12px;
+  height:1.2rem;
   border-radius:50%;
-  margin-top:20px;
-  margin-bottom:20px;
-  box-shadow:inset 0 6px 6px -6px var(--color-border);
+  margin-top:2rem;
+  margin-bottom:2rem;
+  box-shadow:inset 0 0.6rem 0.6rem -0.6rem var(--color-border);
 }
 
 .about .github-icon {
-  width:70px;
-  height:70px;
+  width:7rem;
+  height:7rem;
   background-size:contain;
   background-position:center;
   background-repeat:no-repeat;
@@ -249,22 +254,21 @@ header nav ul {
 }
 
 .data-section p {
-  font-size:16px;
-  margin-bottom:15px;
+  margin-bottom:1.5rem;
   color:var(--color-text); 
 }
 
 .data-section progress {
   width:100%;
-  height:20px;
-  border-radius:10px;
+  height:2rem;
+  border-radius:1rem;
   background-color:var(--color-bg-light);
 }
 
 .data-section meter {
   width:100%;
-  height:20px;
-  border-radius:10px;
+  height:2rem;
+  border-radius:1rem;
 }
 
 .data-section time,data,output,span {
@@ -280,7 +284,7 @@ header nav ul {
 }
 
 .editable-section p {
-  margin-top:30px;
+  margin-top:3rem;
 }
 
 /* text-tags */
@@ -299,8 +303,8 @@ header nav ul {
 }
 
 .text-section span {
-  margin-top:10px;
-  margin-bottom:10px;
+  margin-top:1rem;
+  margin-bottom:1rem;
 }
 
 /* detail */
@@ -318,12 +322,12 @@ summary::marker {
 
 summary {
   color:var(--color-text);
-  padding:10px;
-  border-radius:5px;
+  padding:1rem;
+  border-radius:0.5rem;
 }
 
 details p {
-  padding:30px;
+  padding:3rem;
 }
 
 /* form */
@@ -346,12 +350,12 @@ details p {
 }
 
 .form-tag input {
-  padding:5px;
+  padding:0.5rem;
   outline:none;
-  margin-bottom:20px;
-  border-radius: 5px;
+  margin-bottom:2rem;
+  border-radius:0.5rem;
   background-color: #f1c5d4;
-  border: 2px solid var(--color-text);
+  border:var(--border-global);
 }
 
 
@@ -360,7 +364,7 @@ details p {
   border-radius: 5px;
   color: var(--color-bg);
   background-color: #f1c5d4;
-  border: 2px solid #fb9abe;
+  border:var(--border-global);
 }
 
 input[type="reset"],
@@ -372,13 +376,15 @@ input[type="submit"] {
 textarea {
   width:40%;
   outline:none;
+  color:var(--color-bg);
+  font-family:var(--font-body);
   background-color:var(--color-bg-light);
 }
 
 input[type="image"] {
   border: none;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   background-color: transparent;
 }
 
@@ -390,57 +396,35 @@ input[type="image"] {
   justify-content:center;
 }
 
-.media-section .img-info {
-  text-align:center;
-  margin-bottom:20px;
-} 
-
-.media-section fieldset {
-  display:flex;
-  align-items:center;
-  flex-direction:column;
-  justify-content:center;
-} 
-
 .media-section fieldset figure {
   display:flex;
+  margin-bottom:3rem;
   align-items:center;
   flex-direction:column;
   justify-content:center;
 }
 
 .media-section fieldset figure img {
-  width:330px;
-  height:330px;
-  border-radius:5px;
+  width:33rem;
+  height:33rem;
+  border-radius:0.5rem;
   border:1px solid var(--color-border);
 }
 
-.media-section .img-map {
-  width:330px;
-  margin-top:30px;
-  padding-left:10px;
-}
-
-pre {
-  border-radius:10px;
-  border:1px solid var(--color-border);
+.media-section a {
+  text-decoration:none;
+  color:var(--color-text);
 }
 
 pre code {
   display:block;
-  font-size:15px;
-  margin-left:10px;
-  margin-right:10px;
+  border-radius:1rem;
+  border:1px solid var(--color-border);
 }
 
-.media-section .video-info {
-  display:flex;
-  margin-top:30px;
-  align-items:center;
-  flex-direction:column;
-  justify-content:center;
-} 
+.media-section div > p {
+  margin-bottom:3rem;
+}
 
 /* table section */
 
@@ -452,27 +436,30 @@ pre code {
 
 .table-section table {
   width:100%;
-  margin-bottom:50px;
   border-collapse:collapse;
 }
 
+.table-section table + p {
+  margin-top:5rem;
+}
+
 .table-section thead th {
-  padding-top: 12px;
+  padding-top: 1.2rem;
   text-align: center;
-  padding-bottom: 12px;
+  padding-bottom: 1.2rem;
   color: var(--color-bg);
   background-color: var(--color-aux);
 }
 
 .table-section tfoot th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   color: var(--color-bg);
   background-color: #c3ea9d;
 } 
 
 .table-section table, td {
-  padding:8px;
+  padding:0.8rem;
   text-align: center;
   border:1px solid var(--color-bg);
 }
@@ -483,24 +470,24 @@ pre code {
 }
 
 .table-section p {
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top:2rem;
+  margin-bottom:2rem;
 }
 
 thead th:first-child { 
-    border-top-left-radius: 10px; 
+    border-top-left-radius: 1rem; 
 }
 
 thead th:last-child {   
-    border-top-right-radius: 10px; 
+    border-top-right-radius: 1rem; 
 }
 
 tfoot th:first-child { 
-    border-bottom-left-radius: 10px; 
+    border-bottom-left-radius: 1rem; 
 }
 
 tfoot th:last-child { 
-    border-bottom-right-radius: 10px; 
+    border-bottom-right-radius: 1rem; 
 }
 
 /* footer */
@@ -513,15 +500,15 @@ footer {
 }
 
 footer section a img {
-  width:150px;
-  height:150px;
+  width:15rem;
+  height:15rem;
 }
 
 footer section {
   width:40%;
-  padding:20px;
+  padding:2rem;
   display:flex;
-  margin-top:50px;
+  margin-top:5rem;
   min-height:70vh;
   flex-direction:row;
   align-items:center;
@@ -530,13 +517,13 @@ footer section {
 
 footer section ul {
   display:flex;
-  font-size:20px;
+  font-size:2rem;
   list-style:none;
   flex-direction:column;
 }
 
 footer section ul li {
-  margin-bottom:20px;
+  margin-bottom:2rem;
 }
 
 footer section ul li a {
@@ -548,19 +535,19 @@ footer section ul li a {
 footer hr {
   width:30%;
   border:0px;
-  height:12px;
+  height:1.2rem;
   border-radius:50%;
-  margin-top:20px;
-  margin-bottom:20px;
-  box-shadow:inset 0 6px 6px -6px var(--color-border);
+  margin-top:2rem;
+  margin-bottom:2rem;
+  box-shadow:inset 0 0.6rem 0.6rem -0.6rem var(--color-border);
 }
 
-footer span {
-  margin-bottom:50px;
+footer p {
+  margin-bottom:5rem;
   color:var(--color-text);
 }
 
-footer span a {
+footer p a {
   text-decoration:none;
   color:var(--color-text);
 }

@@ -37,66 +37,83 @@
     </header>
     <!-- main -->
     <main>
-      <!-- hero -->
+      <!-- home section -->
       <section class="home">
-	<h1 class="text_cool">Hyperblog</h1>
+	<h1>Hyperblog</h1>
       </section> 
-      <!-- search -->
-      <section id="search-tag" class="search">
-	<img class="search-img" src="src/img/logo.png">
-	<search class="search-section">
+      <!-- search section-->
+      <section id="search-tag" class="search-section">
+	<img src="src/img/logo.png">
+	<search>
 	  <span class="search-icon"></span>
-	  <input type="text" class="input-search">
+	  <input type="text">
 	  <a href="#" class="micro-icon"></a>
 	</search>
       </section>
+      <!-- about section -->
       <section id="about" class="about">
-	<h1 class="about-title">Hyperblog</h1>
-	<p class="about-text">This is an entire semantic html blog, here you can search any element you want 
-	to know its equivalent in semantic html and its result. ej: ( strong ) - (result to use the tag) <br> Feel free to check out the repo... </p>
+	<h1>Hyperblog</h1>
+	<p>This is a complete semantic HTML blog where you can explore and see 
+	how different tags look in practice. Every element you see in this blog is represented by its 
+	corresponding semantic HTML tag</p>
+	<p>In each section, you'll notice this format: e.g.,<strong> &lt;tag name&gt; </strong>. 
+	This indicates that the element below was written using that specific tag.</p>
+	<p>Feel free to check out the repository to see the code behind this semantic structure.</p>
 	<hr>
 	<a href="https://github.com/jcmunozo/hyperblog" class="github-icon" target=_blank ></a>
       </section> 
       <!-- data-section -->
       <section class="data-section">
-	<h1 class= "data-title">Data tags</h1>
-	<p class="data">Progreso (progress): <progress value="70" max="100">70%</progress></p>
-	<p class="data">Nivel de batería (meter): <meter value="0.6">60%</meter></p>
-	<p class="data"> Fecha (time): <time datetime="2023-09-15">15 de septiembre de 2023</time></p>
-	<p class="data">Población (data): <data value="5000000">5 millones</data></p>
-	<p class="data">Resultado (output): <output name="result">42</output></p>
-	<p class="data">Variables (var): <var>x=h<sup>2</sup>x*a/c<sub>2</sub></var></p>
-	<p class="data">Número genérico (span): <span class="number">12345</span></p>
+	<fieldset>
+	  <legend>Data tags &lt;fieldset - legend&gt;</legend>
+	  <p class="data">Progreso &lt;progress&gt;: <progress value="70" max="100">70%</progress></p>
+	  <p class="data">Nivel de batería &lt;meter&gt;: <meter value="0.6">60%</meter></p>
+	  <p class="data"> Fecha &lt;time&gt;: <time datetime="2023-09-15">15 de septiembre de 2023</time></p>
+	  <p class="data">Población &lt;data&gt;: <data value="5000000">5 millones</data></p>
+	  <p class="data">Resultado &lt;output&gt;: <output name="result">42</output></p>
+	  <p class="data">Variables &lt;var&gt;: <var>x=h<sup>2</sup>x*a/c<sub>2</sub></var></p>
+	  <p class="data">Número genérico &lt;span&gt;: <span class="number">12345</span></p>
+	</fieldset>
+      </section>
+      <section class="editable-section">
+	<fieldset>
+	  <legend>address, editable and more ...</legend>
+	  <p dir="rtl">This text is on right to left, atribute dir = rtl</p>
+	  <p><blockquote> &lt; blockquote &gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	    Fusce nec suscipit ipsum. Vestibulum molestie ligula eleifend, bibendum mi sed, rutrum erat. 
+	    Quisque ac quam vitae ligula venenatis hendrerit.</blockquote><q>&lt; q &gt; name author</q></p>
+	  <p><address> calle 22 Cr 2 #4. &lt;address&gt;</address></p>
+	  <p contenteditable="true">You can edit this text <strong>Type something</strong>.. </p>
+	</fieldset>
       </section>
       <section id="text-tags" class="text-section">
-	<p dir="rtl">This text is on right to left, atribute dir = rtl</p>
-	<p><blockquote> This efect can be done using the tag ( blockquote )</blockquote><q>name author ( q )</q></p>
-	<p><address> calle 22 Cr 2 #4. (address)</address></p>
 	<fieldset>
-	  <legend>Text html tags  (fieldset - legend)</legend>
-	  <span>( abbr )<abbr title="this is use for abbreviations"> put mouse on me.</abbr></span><hr>
-	  <span>( small )<small> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></span><hr>
-	  <span>( sub ) Lorem<sub> ipsum dolor sit amet</sub> consectetur adipiscing elit.</span><hr>
-	  <span>( sup ) Lorem<sup> ipsum dolor sit amet</sup> consectetur adipiscing elit.</span><hr>
-	  <span>( em )<em> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></span><hr>
-	  <span>( del )<del> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</del></span><hr>
-	  <span>( ins )<ins> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ins></span><hr>
-	  <span>( strong )<strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></span><hr>
-	  <span>( big )<big> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</big></span><hr>
-	  <span>( mark )<mark> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mark></span><hr>
+	  <legend>Text html</legend>
+	  <span>&lt; abbr &gt;<abbr title="this is use for abbreviations"> put mouse on me.</abbr></span><hr>
+	  <span>&lt; small &gt;<small> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></span><hr>
+	  <span>&lt; sub &gt; Lorem<sub> ipsum dolor sit amet</sub> consectetur adipiscing elit.</span><hr>
+	  <span>&lt; sup &gt; Lorem<sup> ipsum dolor sit amet</sup> consectetur adipiscing elit.</span><hr>
+	  <span>&lt; em &gt;<em> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></span><hr>
+	  <span>&lt; del &gt;<del> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</del></span><hr>
+	  <span>&lt; ins &gt;<ins> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ins></span><hr>
+	  <span>&lt; strong &gt;<strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></span><hr>
+	  <span>&lt; big &gt;<big> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</big></span><hr>
+	  <span>&lt; mark &gt;<mark> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</mark></span><hr>
 	</fieldset>
-	<p contenteditable="true">You can edit this text</p>
       </section>
       <section id="detail-tag" class="detail-tag">
-	<details>
-	  <summary>show loren ipsum (details - summary - p)</summary>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-	  Quisque aliquet dui id nibh tincidunt tempor. Praesent mi arcu, pharetra at mattis vitae, 
-	  sodales in est. Praesent sit amet interdum tortor. Suspendisse cursus, 
-	  lacus non fermentum facilisis, elit urna iaculis purus, hendrerit imperdiet nisl 
-	  lectus vitae elit. In sit amet dolor eu nibh scelerisque dapibus. 
-	  Curabitur posuere orci nisi, nec dapibus orci auctor sed. Morbi cursus rhoncus metus non suscipit. </p>
-	</details>
+	<fieldset>
+	  <legend> Show details</legend>
+	  <details>
+	    <summary>show loren ipsum &lt;details - summary - p&gt;</summary>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	    Quisque aliquet dui id nibh tincidunt tempor. Praesent mi arcu, pharetra at mattis vitae, 
+	    sodales in est. Praesent sit amet interdum tortor. Suspendisse cursus, 
+	    lacus non fermentum facilisis, elit urna iaculis purus, hendrerit imperdiet nisl 
+	    lectus vitae elit. In sit amet dolor eu nibh scelerisque dapibus. 
+	    Curabitur posuere orci nisi, nec dapibus orci auctor sed. Morbi cursus rhoncus metus non suscipit. </p>
+	  </details>
+	</fieldset>
       </section>
       <section id="form-tag" class="form-tag">
 	<fieldset>
@@ -174,9 +191,20 @@
 	    <p>If u want to remove metadata go verexif</p>
 	  </div>
 	  <figure>
-	    <img src="./src/img/image-section.jpg" alt="radom image">
-	    <figcaption>random image (figure - img - figcaption)</figcaption>
+	    <img src="./src/img/image-section.jpg" alt="radom image" usemap="#image-map">
+	    <figcaption>random image &lt;figure - img - figcaption&gt;</figcaption>
+	    <map name="image-map">
+		<area target="_blank" alt="moon" title="moon" href="https://en.wikipedia.org/wiki/Moon" coords="86,65,41" shape="circle">
+		<area target="_blank" alt="bridge" title="bridge" href="https://en.wikipedia.org/wiki/Bridge" coords="0,174,330,330" shape="rect">
+		<area target="_blank" alt="buildings" title="buildings" href="https://en.wikipedia.org/wiki/Building" coords="202,24,286,104" shape="rect">
+		<area target="_blank" alt="buildings" title="buildings" href="https://en.wikipedia.org/wiki/Building" coords="25,103,310,169" shape="rect">
+		<area target="_blank" alt="buildings" title="buildings" href="https://en.wikipedia.org/wiki/Building" coords="125,78,201,103" shape="rect">
+	    </map>
 	  </figure>
+	  <div class="img-map">
+	    <p>This image use a &lt; map - area &gt; tag, for objects "moon, bridge and buildings".<br>
+	    <strong>put the mouse over</strong> this objects to get info... <br>
+	  </div>
 	  <div class="video-info">
 	  <p>For videos you can use this structure <br>
 	  <pre><code>
@@ -186,6 +214,59 @@
 	  </code></pre>
 	  </div>
 	  </p>
+	</fieldset>
+      </section>
+      <section class="table-section">
+	<fieldset>
+	  <legend>table and lists</legend>
+	  <p>&lt; table, thead, tbody, tfoot, tr and td &gt; tags:</p>
+	  <table>
+	    <thead>
+	      <tr>
+		<th>Month</th>
+		<th>Savings</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+		<td>January</td>
+		<td>$100</td>
+	      </tr>
+	      <tr>
+		<td>February</td>
+		<td>$80</td>
+	      </tr>
+	    </tbody>
+	    <tfoot>
+	      <tr>
+		<th>Sum</th>
+		<th>$180</th>
+	      </tr>
+	    </tfoot>
+	  </table>
+	  <p>&lt; dl &gt; , &lt; dt &gt; and &lt; dd &gt; tags:</p>
+	  <dl>
+	    <dt>Beast of Bodmin</dt>
+	    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+	    <dt>Morgawr</dt>
+	    <dd>A sea serpent.</dd>
+
+	    <dt>Owlman</dt>
+	    <dd>A giant owl-like creature.</dd>
+	  </dl>
+	  <p>&lt; ul &gt; and &lt; li &gt; tags:</p>
+	  <ul>
+	    <li>audi</li>
+	    <li>bmw</li>
+	    <li>ferrary</li>
+	  </ul>
+	  <p>&lt; ol &gt; and &lt; li &gt; tags:</p>
+	  <ol>
+	    <li>audi</li>
+	    <li>bmw</li>
+	    <li>ferrary</li>
+	  </ol>
 	</fieldset>
       </section>
     </main>

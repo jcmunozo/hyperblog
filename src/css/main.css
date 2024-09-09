@@ -28,6 +28,38 @@ body {
   background-color:var(--color-bg)
 }
 
+section fieldset {
+  width:50%;
+  padding:30px;
+  margin-top:30px;
+  border-radius:10px;
+  color:var(--color-text);
+  border:2px solid var(--color-border);
+} 
+
+blockquote, ul, dd, dt, ol {
+  all:revert; /* to reverse global styles */
+}
+
+fieldset legend {
+  margin-left:10px;
+  padding:5px 10px;
+  border-radius:25px;
+  color:var(--color-bg);
+  background-color:var(--color-aux);
+}
+
+fieldset mark {
+  background-color:var(--color-aux)
+}
+
+fieldset hr {
+  width:10%;
+  margin-top:10px;
+  margin-bottom:10px;
+  border:1px dashed var(--color-border);
+}
+
 /* header - navbar */
 
 header {
@@ -82,7 +114,7 @@ header nav ul {
   align-items:center;
 }
 
-.text_cool {
+.home h1 {
   width:100%;
   font-size:200px;
   font-weight:bold;
@@ -99,7 +131,7 @@ header nav ul {
 
 /* main - search */
 
-.search {
+.search-section {
   display:flex;
   min-height:100vh;
   align-items:center;
@@ -107,13 +139,12 @@ header nav ul {
   justify-content:center;
 }
 
-
-.search-img {
+.search img {
   width:200px;
   height:200px;
 }
 
-.search-section {
+.search-section search {
   width:470px;
   display:flex;
   border-radius:50px;
@@ -123,15 +154,15 @@ header nav ul {
   background-color:var(--color-search);
 }
 
-.search-section input {
+.search-section search input {
   background-color:var(--color-search);
 }
 
-.search-section:hover {
+.search-section search:hover {
   border:2px solid var(--color-border);
 }
 
-.input-search {
+.search-section input {
   border:0;
   width:450px;
   height:50px;
@@ -172,16 +203,22 @@ header nav ul {
   justify-content:center;
 }
 
-.about-title {
+.about h1 {
   font-size:40px;
+  margin-top:60px;
   margin-bottom:20px;
   color:var(--color-text);
 }
 
-.about-text {
-  width:40%;
+.about p {
+  width:50%;
   font-size:20px;
+  margin-bottom:20px;
   color:var(--color-text);
+}
+
+.about strong {
+  color:var(--color-aux);
 }
 
 .about hr {
@@ -194,7 +231,7 @@ header nav ul {
   box-shadow:inset 0 6px 6px -6px var(--color-border);
 }
 
-.github-icon {
+.about .github-icon {
   width:70px;
   height:70px;
   background-size:contain;
@@ -206,11 +243,9 @@ header nav ul {
 /* data styles */
 
 .data-section {
-  padding:20px;
-  max-width:50%;
-  margin:40px auto;
-  border-radius:10px;
-  border:3px solid var(--color-border);
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .data-title {
@@ -228,6 +263,7 @@ header nav ul {
 p progress {
   width:100%;
   height:20px;
+  border-radius:10px;
   background-color:var(--color-bg-light);
 }
 
@@ -253,60 +289,39 @@ p output {
   font-weight:bold;
 }
 
+/* editable and more */
+
+.editable-section {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.editable-section p {
+  margin-top:30px;
+}
+
 /* text-tags */
 
 .text-section {
-  padding:20px;
-  max-width:700px;
-  margin:40px auto;
-  border-radius:10px;
-  color:var(--color-text);
-  border:2px solid var(--color-border);
-}
-
-.text-section p {
-  margin:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .text-section fieldset {
   display:flex;
-  padding-top:30px;
   align-items:center;
-  border-radius:10px;
-  padding-bottom:30px;
   flex-direction:column;
-  justify-content: center;
-  border:2px solid var(--color-border);
-}
-
-fieldset legend {
-  margin-left:10px;
-  padding:5px 10px;
-  border-radius:25px;
-  color:var(--color-bg);
-  background-color:var(--color-aux);
-}
-
-fieldset mark {
-  background-color:var(--color-aux)
-}
-
-fieldset hr {
-  width:10%;
-  margin-top:10px;
-  margin-bottom:10px;
-  border:1px dashed var(--color-border);
+  justify-content:center;
 }
 
 /* detail */
 
 .detail-tag {
-  padding:20px;
-  max-width:700px;
-  margin:40px auto;
-  border-radius:10px;
-  color:var(--color-text);
-  border:2px solid var(--color-border);
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 summary::marker {
@@ -328,20 +343,15 @@ details p {
 
 .form-tag {
   display:flex;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
 }
 
 .form-tag fieldset {
-  width:50%;
   display:flex;
-  padding:10px;
   align-items:center;
-  border-radius:10px;
-  padding-bottom:30px;
   flex-direction:column;
-  justify-content: center;
-  border:2px solid var(--color-border);
+  justify-content:center;
 }
 
 .form-tag label {
@@ -389,7 +399,6 @@ input[type="image"] {
 
 .media-section {
   display:flex;
-  margin-top:50px;
   align-items:center;
   justify-content:center;
 }
@@ -400,16 +409,10 @@ input[type="image"] {
 } 
 
 .media-section fieldset {
-  width:50%;
   display:flex;
-  padding:20px;
   align-items:center;
-  border-radius:10px;
-  padding-bottom:30px;
   flex-direction:column;
   justify-content:center;
-  color:var(--color-text);
-  border:2px solid var(--color-border);
 } 
 
 .media-section fieldset figure {
@@ -424,6 +427,12 @@ input[type="image"] {
   height:330px;
   border-radius:5px;
   border:1px solid var(--color-border);
+}
+
+.media-section .img-map {
+  width:330px;
+  margin-top:30px;
+  padding-left:10px;
 }
 
 pre {
@@ -445,6 +454,61 @@ pre code {
   flex-direction:column;
   justify-content:center;
 } 
+
+/* table section */
+
+.table-section {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.table-section table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+.table-section thead th {
+  padding-top: 12px;
+  text-align: center;
+  padding-bottom: 12px;
+  color: var(--color-bg);
+  background-color: var(--color-aux);
+}
+
+.table-section tfoot th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--color-bg);
+  background-color: #c3ea9d;
+} 
+
+.table-section table, td {
+  padding:8px;
+  text-align: center;
+  border:1px solid var(--color-bg);
+}
+
+.table-section tbody tr:hover {
+  color:var(--color-bg);
+  background-color: var(--color-bg-light);
+}
+
+thead th:first-child { 
+    border-top-left-radius: 10px; 
+}
+
+thead th:last-child {   
+    border-top-right-radius: 10px; 
+}
+
+tfoot th:first-child { 
+    border-bottom-left-radius: 10px; 
+}
+
+tfoot th:last-child { 
+    border-bottom-right-radius: 10px; 
+}
 
 /* footer */
 

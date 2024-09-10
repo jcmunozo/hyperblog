@@ -271,10 +271,6 @@ header nav ul {
   border-radius:1rem;
 }
 
-.data-section time,data,output,span {
-  font-weight:bold;
-}
-
 /* editable and more */
 
 .editable-section {
@@ -321,6 +317,7 @@ summary::marker {
 }
 
 summary {
+  cursor:pointer;
   color:var(--color-text);
   padding:1rem;
   border-radius:0.5rem;
@@ -350,12 +347,14 @@ details p {
 }
 
 .form-tag input {
-  padding:0.5rem;
   outline:none;
+  padding:0.5rem;
   margin-bottom:2rem;
   border-radius:0.5rem;
+  color:var(--color-bg);
   background-color: #f1c5d4;
   border:var(--border-global);
+  font-family:var(--font-body);
 }
 
 

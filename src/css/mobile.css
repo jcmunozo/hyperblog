@@ -1,0 +1,69 @@
+/* https://www.mydevice.io/  breakpoints */
+
+section fieldset {
+  width:90%;
+}
+
+/* home */
+
+.home {
+  display:none;
+}
+
+.search-section {
+  min-height:10vh;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+.search-section img {
+  width:15rem;
+  height:15rem;
+}
+
+.search-section search {
+  width:36rem;
+}
+
+/* header */
+
+header {
+  justify-content:center;
+}
+
+header nav {
+  display:none;
+} 
+
+/* about */
+
+.about p {
+  width:90%;
+}
+
+/* media */
+
+.media-section fieldset figure img{
+  width:25rem;
+  height:25rem;
+
+}
+
+pre code {
+  display:none;
+}
+
+/* footer */
+
+footer section {
+  width:100%;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+footer section a img {
+  width:12rem;
+  height:12rem;
+}

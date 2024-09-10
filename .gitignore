@@ -1,11 +1,7 @@
-# Logs
-logs/
-*.log
-
-# OS
-.DS_Store
-Thumbs.db
-
-# temp files
-*.tmp
+# nvim files
 *.swp
+*.swo
+*.tmp
+
+# nvim backup
+*.bak

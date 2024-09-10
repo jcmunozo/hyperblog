@@ -1,2 +1,2 @@
 # hyperblog
-Pure semantic html and css site
+This website was created with the goal of learn about semantic html.

@@ -1,0 +1,32 @@
+/* vars */
+:root {
+  --color-bg:#1e2030;
+  --color-search:#f1c5d4;
+  --color-text:#fd9bbe;
+  --color-border:#fd9bbe; 
+  --color-bg-light: #f1c5d4;
+  --color-footer:#b38ad3;
+  --color-aux:#ae86cd;
+
+  --font-body:"Noto Serif", serif;
+  --font-home:"Anton", sans-serif;
+
+  --border-global:2px solid var(--color-border);
+}
+/* global */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {
+  font-size:62.5%;
+  font-family:var(--font-body);
+  scroll-behavior:smooth;
+}
+
+body {
+  font-size:1.8rem;
+  background-color:var(--color-bg)
+}

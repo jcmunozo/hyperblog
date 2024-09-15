@@ -59,6 +59,10 @@ header nav div {
   width:47rem;
 }
 
+.search-section input {
+  width:45rem;
+}
+
 /* main - about */
 
 .about p {

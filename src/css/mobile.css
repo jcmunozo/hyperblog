@@ -145,7 +145,7 @@ header nav ul {
 }
 
 .search-section search {
-  width:36rem;
+  width:30rem;
   display:flex;
   border-radius:5rem;
   align-items:center;
@@ -166,7 +166,7 @@ header nav ul {
 
 .search-section input {
   border:0;
-  width:45rem;
+  width:18rem;
   height:5rem;
   outline:none;
   font-size:1.8rem;
@@ -538,6 +538,7 @@ footer hr {
 }
 
 footer p {
+  text-align:center;
   margin-bottom:5rem;
   color:var(--color-text);
 }

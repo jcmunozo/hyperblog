@@ -28,6 +28,16 @@ header nav ul {
   flex-direction:row;
   align-items:center;
   justify-content:space-between;
+  /* removed mobile css */
+  padding:0;
+  border-radius:0;
+  backdrop-filter:none;
+  border:none;
+}
+
+header nav ul li {
+  margin-top:0;
+  width:auto;
 }
 
 header nav div {
@@ -47,6 +57,7 @@ header nav div {
 /* main - search */
 
 .search-section img {
+  margin-top:0;
   width:20rem;
   height:20rem;
 }
@@ -64,6 +75,10 @@ header nav div {
 }
 
 /* main - about */
+
+.about h1 {
+  margin-top:6rem;
+}
 
 .about p {
   width:50%;

@@ -67,6 +67,7 @@ header nav div {
 }
 
 .search-section search {
+  margin-bottom:0;
   width:47rem;
 }
 

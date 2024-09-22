@@ -137,6 +137,7 @@ header nav ul li {
 }
 
 .search-section search {
+  margin-bottom:200px;
   width:30rem;
   display:flex;
   border-radius:5rem;
